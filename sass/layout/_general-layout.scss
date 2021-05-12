@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+}
+
+#main_content {
+  display: inline-block;
+  width: 95vw;
+  min-height: 95vh;
+  background-color: rgb(216, 177, 177);
+  margin: 2.5vh 0 0 2.5vw;
+  display: flex;
+}
+
+article {
+  background-color: brown;
+  height: 45vh;
+  width: 90%;
+  margin: 2.5vh 0 0 2.5vw;
+}
