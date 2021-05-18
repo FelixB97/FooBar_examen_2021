@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
+  align-items: end;
 }
 
 #active_keg_information_app .keg_container div {
@@ -12,8 +13,8 @@
 }
 
 #active_keg_information_app .keg_container div div {
-  width: 150px;
-  height: 150px;
+  width: 35vw;
+  height: 35vw;
   background-color: #c4c4c4;
   display: flex;
   justify-content: end;
@@ -23,7 +24,7 @@
   border-radius: 10px;
 }
 
-#active_keg_information_app .keg_container div div div {
+#active_keg_information_app .keg_container div div .beer {
   width: 90%;
   height: 90%;
   background-color: #e8c05a;
@@ -37,5 +38,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
+  }
+  #active_keg_information_app .keg_container div div {
+    width: 10vw;
+    height: 10vw;
   }
 }

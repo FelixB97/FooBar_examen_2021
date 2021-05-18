@@ -14,7 +14,7 @@ function displayKegData(){
         counter++
         document.querySelector(`#active_keg_information_app .keg_container .keg${counter} h3`).innerHTML = globalData.taps[(counter-1)].beer;
         document.querySelector(`#active_keg_information_app .keg_container .keg${counter} h4`).innerHTML = globalData.taps[(counter-1)].level;
-        document.querySelector(`#active_keg_information_app .keg_container .keg${counter} div div`).style.height = `${((globalData.taps[(counter-1)].level)/2500)*100}%`; 
+        document.querySelector(`#active_keg_information_app .keg_container .keg${counter} div .beer`).style.height = `${((globalData.taps[(counter-1)].level)/2500)*100}%`; 
     })
 
     setTimeout(displayKegData, 1000);
