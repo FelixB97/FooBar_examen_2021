@@ -1,3 +1,22 @@
+#que_container {
+  overflow-y: scroll;
+  height: 35vh;
+}
+
 #que_container article {
   all: initial;
+  display: flex;
+  background-color: #5e676a;
+  height: 8vh;
+  max-width: 80vw;
+  border-radius: 10px;
+  align-items: center;
+  margin: 0px 0px 0px 20px;
+  justify-content: space-between;
+}
+
+@media (min-width: 900px) {
+  #que_container article {
+    max-width: 27vw;
+  }
 }

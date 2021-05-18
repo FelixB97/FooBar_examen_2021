@@ -29,12 +29,15 @@ h6 {
   flex-direction: column;
   margin: 5vh 2.5vw 0 2.5vw;
   width: 95vw;
+  article {
+    margin-bottom: 5vh;
+  }
 }
 
 article {
   background-color: #343434;
   min-height: 40vh;
-  width: 95vw;
+  width: 90vw;
   border-style: solid;
   border-width: 5px;
   border-color: #16acda;
@@ -44,13 +47,16 @@ article {
 @media (min-width: 900px) {
   #main_content .top_container {
     max-height: 45vh;
+    article {
+      width: 95vw;
+    }
   }
-
   #main_content .bottom_container {
     flex-direction: row;
     justify-content: space-between;
+    max-height: 45vh;
   }
   #main_content .bottom_container article {
-    width: 22vw;
+    width: 29.5vw;
   }
 }
