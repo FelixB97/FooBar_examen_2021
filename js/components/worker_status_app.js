@@ -4,6 +4,7 @@ export function worker_status_app() {
     console.log("worker_status_app loaded")
 
     displayEmployeeData();
+    workerButtonEvent();
 }
 
 function displayEmployeeData() {
@@ -18,4 +19,13 @@ function displayEmployeeData() {
     })
 
     setTimeout(displayEmployeeData, 1000);
+}
+
+function workerButtonEvent() {
+    document.querySelector(".buttons .worker_button").addEventListener("click", showWorkers)
+}
+
+function showWorkers() {
+    document.querySelector("#worker_status_app").classList.remove("hidden");
+    document.querySelector("#storage_amount_app").classList.add("hidden");
 }

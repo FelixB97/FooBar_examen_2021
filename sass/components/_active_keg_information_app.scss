@@ -33,6 +33,16 @@
   transition-duration: 2s;
 }
 
+#active_keg_information_app .keg_container .keg {
+  position: relative;
+  img {
+    position: absolute;
+    width: 9vw;
+    height: 9vw;
+    bottom: 1.5vw;
+  }
+}
+
 @media (min-width: 900px) {
   #active_keg_information_app .keg_container {
     display: grid;
