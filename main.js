@@ -26,7 +26,7 @@ async function fetchData() {
   const response = await fetch('https://foobar-jearasfix.herokuapp.com/');
   const jsonData = await response.json();
   currentData = jsonData; // not nessesary
-  globalData = jsonData; // global variable in inline script in index.html to use this fetch in all components
+  globalData.barData = jsonData; // global variable in inline script in index.html to use this fetch in all components
 
   // console.log(currentData);
 

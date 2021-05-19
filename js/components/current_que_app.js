@@ -14,7 +14,7 @@ function displayQue() {
     
     let counter = 0;
 
-    globalData.queue.forEach( (person) => {
+    globalData.barData.queue.forEach( (person) => {
     
         counter++
         const klon = template.cloneNode(true).content;

@@ -13,9 +13,9 @@ function displayEmployeeData() {
     let counter = 0;
     selector.forEach( () => {
         counter++
-        document.querySelector(`#worker_status_app .employee_${counter} h5`).innerHTML = globalData.bartenders[(counter-1)].name;
-        document.querySelector(`#worker_status_app .employee_${counter} h3`).innerHTML = `Customer: ${globalData.bartenders[(counter-1)].servingCustomer}`;
-        document.querySelector(`#worker_status_app .employee_${counter} h4`).innerHTML = globalData.bartenders[(counter-1)].statusDetail;
+        document.querySelector(`#worker_status_app .employee_${counter} h5`).innerHTML = globalData.barData.bartenders[(counter-1)].name;
+        document.querySelector(`#worker_status_app .employee_${counter} h3`).innerHTML = `Customer: ${globalData.barData.bartenders[(counter-1)].servingCustomer}`;
+        document.querySelector(`#worker_status_app .employee_${counter} h4`).innerHTML = globalData.barData.bartenders[(counter-1)].statusDetail;
     })
 
     setTimeout(displayEmployeeData, 1000);
@@ -28,4 +28,10 @@ function workerButtonEvent() {
 function showWorkers() {
     document.querySelector("#worker_status_app").classList.remove("hidden");
     document.querySelector("#storage_amount_app").classList.add("hidden");
+
+    document.querySelector(".buttons .worker_button").classList.remove("primary");
+    document.querySelector(".buttons .worker_button").classList.add("secondary");
+
+    document.querySelector(".buttons .storage_button").classList.remove("secondary");
+    document.querySelector(".buttons .storage_button").classList.add("primary");
 }
