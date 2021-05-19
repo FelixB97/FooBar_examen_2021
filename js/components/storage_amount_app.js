@@ -4,6 +4,7 @@ export function storage_amount_app() {
     console.log("storage_amount_app loaded")
 
     displayStorageData();
+    storageButtonEvent();
 }
 
 function displayStorageData() {
@@ -17,4 +18,14 @@ function displayStorageData() {
     })
 
     setTimeout(displayStorageData, 1000);
+}
+
+function storageButtonEvent() {
+    document.querySelector("#storage_amount_app").classList.add("hidden");
+    document.querySelector(".buttons .storage_button").addEventListener("click", showStorage)
+}
+
+function showStorage() {
+    document.querySelector("#worker_status_app").classList.add("hidden");
+    document.querySelector("#storage_amount_app").classList.remove("hidden");
 }
