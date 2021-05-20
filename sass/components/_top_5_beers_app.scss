@@ -1,22 +1,28 @@
 #top_5_beers_app :nth-child(2) {
   display: flex;
   flex-direction: row;
-  padding-left: 2.5vw;
-  padding-right: 2.5vw;
-  :first-child {
-    margin-right: auto;
-  }
+}
+
+#top_5_beers_app { 
+    .header {
+    padding: 2vh 14.5vw 0 13vw;
+    justify-content: space-between;
+    }
+    h2 {
+        text-align: center;
+        margin-top: 2.5vh;
+    }
 }
 
 #top5Content {
   margin-top: 2.5vh;
+  padding: 2vh 14.5vw 0 13vw;
 }
 
 #top5Content div {
   display: flex;
   flex-direction: row;
-  padding-left: 2.5vw;
-  padding-right: 2.5vw;
+  margin-bottom: 1vh;
   h4 {
     margin-right: auto;
   }
