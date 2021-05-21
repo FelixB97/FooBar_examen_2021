@@ -1,18 +1,36 @@
-#que_container {
-  overflow-y: scroll;
-  height: 35vh;
+#current_que_app {
+  h2 {
+    text-align: center;
+    margin: 2.5vh 0 0 0;
+  }
 }
 
-#que_container article {
+#que_container {
+  overflow-y: scroll;
+  min-height: 35vh;
+  padding: 4vw 3vw 3vw 3vw;
+  
+}
+
+#main_content .bottom_container #current_que_app #que_container article {
   all: initial;
   display: flex;
   background-color: #5e676a;
-  height: 8vh;
-  max-width: 80vw;
   border-radius: 10px;
+  margin-bottom: 3vw;
+  height: 8.43vh;
+  justify-content: start;
   align-items: center;
-  margin: 0px 0px 0px 20px;
-  justify-content: space-between;
+  padding-left: 2.8vh;
+  h5 {
+    margin-left: 7vw;
+    width: 100%;
+  }
+  h3 {
+    width:100%;
+    text-align: end;
+    margin-right: 3vw;
+  }
 }
 
 @media (min-width: 900px) {

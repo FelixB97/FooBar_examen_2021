@@ -8,7 +8,7 @@ export function storage_amount_app() {
 }
 
 function displayStorageData() {
-    const selector = document.querySelectorAll("#storage_amount_app div");
+    const selector = document.querySelectorAll("#storage_container div");
 
     let counter = 0;
     selector.forEach( () => {

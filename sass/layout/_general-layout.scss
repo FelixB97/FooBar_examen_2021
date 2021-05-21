@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+#ui_elements {
+  display: none;
+}
+
 html {
   background-color: black;
 }
@@ -32,6 +36,10 @@ h6 {
   article {
     margin-bottom: 5vh;
   }
+}
+
+button {
+  cursor: pointer;
 }
 
 article {
