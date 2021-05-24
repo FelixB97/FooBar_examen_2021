@@ -24,17 +24,36 @@
   padding-left: 2.8vh;
   h5 {
     margin-left: 7vw;
-    width: 100%;
+    max-width: 100%;
   }
   h3 {
     width:100%;
     text-align: end;
     margin-right: 3vw;
+    white-space: nowrap;
   }
 }
 
 @media (min-width: 900px) {
-  #que_container article {
+  #current_que_app #que_container {
+    min-height: 29vh;
+    height: 29vh;
+    padding: 0vh 1vw 0vh 1vw;
+    margin-top: 3.76vh;
+  }
+  #main_content .bottom_container #current_que_app #que_container article {
     max-width: 27vw;
+    margin-bottom: 1.5vh;
+    padding-left: 1.2vw;
+    h5 {
+      margin-left: 2vw;
+      max-width: 50%;
+    }
+    h3 {
+      width:100%;
+      text-align: end;
+      margin-right: 1vw;
+      white-space: nowrap;
+    }
   }
 }

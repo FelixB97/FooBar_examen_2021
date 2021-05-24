@@ -19,8 +19,8 @@
     div:first-child {
         all:initial;
         display:flex;
-        height: 6vh;
-        width: 6vh;
+        height: 7vh;
+        width: 7vh;
         background-color: #c4c4c4;
         border-radius: 10px;
         margin-left: 1.4vh;
@@ -31,4 +31,19 @@
         justify-content: center;
         margin-left: 5vw;
     }
+}
+
+@media (min-width: 900px) {
+  #worker_status_app {
+    padding: 3vh 1vw 2vh 1vw;
+    div {
+      background-color: #5e676a;
+      border-radius: 10px;
+      margin-bottom: 1.5vh;
+      height: 8.43vh;
+    }
+    div:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
