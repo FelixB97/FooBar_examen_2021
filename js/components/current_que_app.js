@@ -21,10 +21,53 @@ function displayQue() {
         
         klon.querySelector(`h3`).innerHTML = counter + ". in que";
         klon.querySelector(`h4`).innerHTML = "#" + person.id;
-        klon.querySelector(`h5`).innerHTML = person.order.join();
+
+        const parsedOrder = sepperateBeers(person.order);
+
+        klon.querySelector(`h5`).innerHTML = parsedOrder.join("");
 
         container.appendChild(klon); 
     });
    
     setTimeout(displayQue, 1000);
 }
+
+function sepperateBeers(orderArray) {
+    
+    const uniqueArray = orderArray.filter(onlyUnique);
+    let parsedArray = [];
+
+    uniqueArray.forEach( (drink) => {
+        const beerObject = {
+            beerName: drink,
+            beerCount: 0
+        }
+
+        parsedArray.push(beerObject);
+
+    });
+    
+
+    orderArray.forEach( (drink) => {
+        const theIndex = parsedArray.findIndex(element => element.beerName === drink);
+        parsedArray[theIndex].beerCount++;
+    })
+
+    const theStringArray = parsedArrayToString(parsedArray);
+
+    return theStringArray
+
+}
+
+function onlyUnique(value, index, self) {
+    return self.indexOf(value) === index;
+  }
+
+  function parsedArrayToString(parsedArray) {
+      let stringArray = [];
+      parsedArray.forEach( (drink) => {
+        const stringToPush = drink.beerCount + " x " + drink.beerName + "<br>";
+        stringArray.push(stringToPush);
+      });
+      return stringArray
+  }
