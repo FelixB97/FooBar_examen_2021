@@ -42,16 +42,13 @@ function displayRankedBeers() {
         return b.beerSales - a.beerSales;
       });
 
-    let counter = 1
+    let counter = 0
     const top5 = document.querySelectorAll("#top5Content div");
     //displays top 5 best selling beers
     top5.forEach( () => {
-        if (sortedArray[counter].beerSales > 0 ) {
-            document.querySelector(`#top5Content div:nth-child(${counter}) h4`).innerHTML = `${counter}. ` + sortedArray[(counter-1)].beerName;
-            document.querySelector(`#top5Content div:nth-child(${counter}) h3`).innerHTML = sortedArray[(counter-1)].beerSales;
-        }
-
         counter++
+        document.querySelector(`#top5Content .top${counter} h4`).innerHTML = `${counter}. ` + sortedArray[(counter-1)].beerName;
+        document.querySelector(`#top5Content .top${counter} h3`).innerHTML = sortedArray[(counter-1)].beerSales;
     })
 
 

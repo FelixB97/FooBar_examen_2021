@@ -1,7 +1,7 @@
 #current_que_app {
   h2 {
     text-align: center;
-    margin: 2.5vh 0 0 0;
+    margin: 2vh 0 0 0;
   }
 }
 
@@ -40,8 +40,15 @@
     min-height: 29vh;
     height: 29vh;
     padding: 0vh 1vw 0vh 1vw;
-    margin-top: 3.76vh;
+    margin-top: 2.5vh;
   }
+  #current_que_app {
+    h2 {
+      height: 41.5px;
+      margin-top: 2.5vh;
+    }
+  }
+  
   #main_content .bottom_container #current_que_app #que_container article {
     max-width: 27vw;
     margin-bottom: 1.5vh;

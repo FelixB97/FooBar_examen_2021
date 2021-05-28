@@ -7,7 +7,7 @@
 }
 
 html {
-  background-image: url("../images/background.png");
+  // background-image: url("../images/background.png");
   background-size: cover;
   background-position: center;
 }
@@ -20,12 +20,24 @@ h6 {
   color: white;
 }
 
+body {
+  background-image: url("../images/night_sky_background.svg");
+  background-position: center;
+  background-size: cover;
+}
+
 #main_content {
   width: 95vw;
   min-height: 95vh;
+  #logo_container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vh;
+  }
 }
 #main_content .top_container {
-  margin: 5vh 2.5vw 0 2.5vw;
+  margin: 2vh 2.5vw 0 2.5vw;
   width: 95vw;
   display: flex;
 }
@@ -57,9 +69,15 @@ article {
 @media (min-width: 900px) {
   #main_content .top_container {
     max-height: 45vh;
+    margin-top: 1vh;
     article {
       width: 95vw;
     }
+  }
+  #main_content #logo_container {
+    justify-content: start;
+    margin-left: 3vw;
+    margin-top: 1vh;
   }
   #main_content .bottom_container {
     flex-direction: row;

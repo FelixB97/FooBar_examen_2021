@@ -18,6 +18,7 @@
   h4 {
     font-size: 4vw;
     margin-top: 1vh;
+    font-family: "a_astro_space";
   }
 }
 
@@ -33,20 +34,27 @@
   height: 35vw;
   background-color: #c4c4c4;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   border-radius: 10px;
+  .foam {
+    margin-top: 10%;
+    background-color: rgb(247, 247, 247);
+    height: 10%;
+    width: 90%;
+    border-radius: 3px 3px 0 0;
+  }
 }
 
 #active_keg_information_app .keg_container div div .beer {
   width: 90%;
   height: 90%;
-  background-color: #e8c05a;
+  background-color: #e4b94c;
   border-radius: 0 0 10px 10px;
   padding: 0;
   transition-duration: 2s;
   margin-bottom: 5%;
-  margin-top: 10%;
+  
 }
 
 #active_keg_information_app .keg_container .keg {
