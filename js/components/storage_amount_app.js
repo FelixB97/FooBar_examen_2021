@@ -26,12 +26,12 @@ function storageButtonEvent() {
 }
 
 function showStorage() {
-    document.querySelector("#worker_status_app").classList.add("hidden");
-    document.querySelector("#storage_amount_app").classList.remove("hidden");
+    document.querySelector("#worker_status_app").classList.remove("hidden");
+    document.querySelector("#storage_amount_app").classList.add("hidden");
 
-    document.querySelector(".buttons .storage_button").classList.remove("primary");
-    document.querySelector(".buttons .storage_button").classList.add("secondary");
+    document.querySelector(".buttons .storage_button").classList.add("primary");
+    document.querySelector(".buttons .storage_button").classList.remove("secondary");
 
-    document.querySelector(".buttons .worker_button").classList.remove("secondary");
-    document.querySelector(".buttons .worker_button").classList.add("primary");
+    document.querySelector(".buttons .worker_button").classList.add("secondary");
+    document.querySelector(".buttons .worker_button").classList.remove("primary");
 }

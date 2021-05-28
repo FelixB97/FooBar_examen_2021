@@ -30,6 +30,15 @@ h1 {
   font-family: "a_astro_space";
 }
 h2 {
+  font-family: "a_astro_space";
+}
+h3 {
+  font-family: "a_astro_space";
+}
+h4{
+  font-family: "petrichor_sublimey";
+}
+h5{
   font-family: "petrichor_sublimey";
 }
 p {
@@ -49,11 +58,12 @@ p {
 .primary {
   background-color: #76deff;
   box-shadow: 4px 4px 0px 0px #16acda;
+  cursor: default;
 }
-.primary:hover {
-  background-color: #16acda;
-  box-shadow: 4px 4px 0px 0px #76deff;
-}
+// .primary:hover {
+//   background-color: #16acda;
+//   box-shadow: 4px 4px 0px 0px #76deff;
+// }
 .secondary {
   background-color: #787878;
   box-shadow: 4px 4px 0px 0px #896bff;
@@ -61,6 +71,7 @@ p {
 .secondary:hover {
   background-color: #896bff;
   box-shadow: 4px 4px 0px 0px #787878;
+  cursor: pointer;
 }
 
 // DETAIL AND SUMMARY

@@ -19,7 +19,7 @@ function displayQue() {
         counter++
         const klon = template.cloneNode(true).content;
         
-        klon.querySelector(`h3`).innerHTML = counter + ". in que";
+        klon.querySelector(`h3`).innerHTML = counter + ".";
         klon.querySelector(`h4`).innerHTML = "#" + person.id;
 
         const parsedOrder = sepperateBeers(person.order);
