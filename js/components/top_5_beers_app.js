@@ -2,10 +2,10 @@
 
 export function top_5_beers_app() {
     console.log("top_5_beers_app loaded")
-    rankbeers(); // calls main function
+    displayTop5(); // calls main function
 }
 //starts all the functions and creates global arrays to store ranking data
-function rankbeers() {
+function displayTop5() {
     globalData.ranking = [];
     globalData.currentRankCounter = 0;
     createBeerArray();
@@ -50,8 +50,5 @@ function displayRankedBeers() {
         document.querySelector(`#top5Content .top${counter} h4`).innerHTML = `${counter}. ` + sortedArray[(counter-1)].beerName;
         document.querySelector(`#top5Content .top${counter} h3`).innerHTML = sortedArray[(counter-1)].beerSales;
     })
-
-
-    
     setTimeout(displayRankedBeers,1000);
 }

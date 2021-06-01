@@ -6,10 +6,9 @@ export function storage_amount_app() {
     displayStorageData();
     storageButtonEvent();
 }
-
+//displays data from globalData.barData.storage
 function displayStorageData() {
     const selector = document.querySelectorAll("#storage_container div");
-
     let counter = 0;
     selector.forEach( () => {
         counter++
@@ -19,7 +18,7 @@ function displayStorageData() {
 
     setTimeout(displayStorageData, 1000);
 }
-
+//below is button event and class changes
 function storageButtonEvent() {
     document.querySelector("#storage_amount_app").classList.add("hidden");
     document.querySelector(".buttons .storage_button").addEventListener("click", showStorage)

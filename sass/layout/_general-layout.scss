@@ -26,15 +26,16 @@ body {
   background-size: cover;
 }
 
+#logo_container {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2vh;
+}
+
 #main_content {
   width: 95vw;
   min-height: 95vh;
-  #logo_container {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2vh;
-  }
 }
 #main_content .top_container {
   margin: 2vh 2.5vw 0 2.5vw;
@@ -74,7 +75,7 @@ article {
       width: 95vw;
     }
   }
-  #main_content #logo_container {
+  #logo_container {
     justify-content: start;
     margin-left: 3vw;
     margin-top: 1vh;

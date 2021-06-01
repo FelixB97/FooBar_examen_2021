@@ -2,14 +2,12 @@
 
 export function worker_status_app() {
     console.log("worker_status_app loaded")
-
     displayEmployeeData();
     workerButtonEvent();
 }
-
+//displas data from globalData.barData.bartenders
 function displayEmployeeData() {
     const selector = document.querySelectorAll("#worker_status_app .worker");
-
     let counter = 0;
     selector.forEach( () => {
         counter++
@@ -21,10 +19,9 @@ function displayEmployeeData() {
             document.querySelector(`#worker_status_app .employee_${counter} h3`).innerHTML = "Customer: none";
         }
     });
-
     setTimeout(displayEmployeeData, 1000);
 }
-
+//below is button event and class changes
 function workerButtonEvent() {
     document.querySelector(".buttons .worker_button").addEventListener("click", showWorkers)
 }
