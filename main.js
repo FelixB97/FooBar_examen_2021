@@ -1,7 +1,7 @@
 "use strict";
 import "./sass/main.scss";
 import {active_keg_information_app} from "./js/components/ative_keg_information_app.js";
-import {current_que_app} from "./js/components/current_que_app.js";
+import {current_queue_app} from "./js/components/current_queue_app.js";
 import {storage_amount_app} from "./js/components/storage_amount_app.js";
 import {top_5_beers_app} from "./js/components/top_5_beers_app.js";
 import {worker_status_app} from "./js/components/worker_status_app.js";

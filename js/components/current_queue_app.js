@@ -1,12 +1,12 @@
 "use strict";
 
-export function current_que_app() {
-    console.log("current_que_app loaded");
-    displayQue();
+export function current_queue_app() {
+    console.log("current_queue_app loaded");
+    displayQueue();
 }
 //display queue first defines the template pointer and container, 
 //then appens HTML elements based onn the size of globalData.barData.queue
-function displayQue() {
+function displayQueue() {
     const container = document.querySelector("#que_container");
     const template = document.querySelector("#current_que_app template");
     container.innerHTML ="";

@@ -16,7 +16,7 @@ function displayKegData(){
         document.querySelector(`#active_keg_information_app .keg_container .keg${counter} h4`).innerHTML = `${percentage}%`; 
         document.querySelector(`#active_keg_information_app .keg_container .keg${counter} div .beer`).style.height = `${((globalData.barData.taps[(counter-1)].level)/2500)*100}%`; 
         document.querySelector(`#active_keg_information_app .keg_container .keg${counter} div .foam`).style.height = `${(((globalData.barData.taps[(counter-1)].level)/2500)*100)/10+2}%`; 
-        document.querySelector(`#active_keg_information_app .keg_container .keg${counter} img`).src = `./logos_highres/${globalData.barData.taps[(counter-1)].beer.replaceAll(" ", "").toLowerCase()}.png`;
+        document.querySelector(`#active_keg_information_app .keg_container .keg${counter} img`).src = `./minified_logos/${globalData.barData.taps[(counter-1)].beer.replaceAll(" ", "").toLowerCase()}.png`;
 
         if (globalData.barData.taps[(counter-1)].level === 0) {
             document.querySelector(`#active_keg_information_app .keg_container .keg${counter} div .foam`).style.height = 0;
