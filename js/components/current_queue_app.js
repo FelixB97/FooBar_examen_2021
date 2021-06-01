@@ -29,7 +29,7 @@ function displayQueue() {
         container.appendChild(klon); 
     });
    
-    setTimeout(displayQue, 1000);
+    setTimeout(displayQueue, 1000);
 }
 //by creating a unique array of objects with a beerCount,
 //we can compare the original order with that new array, 

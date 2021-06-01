@@ -8,17 +8,14 @@ import {worker_status_app} from "./js/components/worker_status_app.js";
 
 window.addEventListener("DOMContentLoaded", init);
 
-let currentData = {};
-
 async function init() { // async so apps doesnt run before the information they require is available
   console.log("initializing...");
   await fetchData(); 
   active_keg_information_app();
-  current_que_app();
+  current_queue_app();
   storage_amount_app();
   top_5_beers_app();
   worker_status_app();
-
   console.log("initialization complete!");
 }
 
