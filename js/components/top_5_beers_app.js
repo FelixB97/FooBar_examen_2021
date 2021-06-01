@@ -50,8 +50,5 @@ function displayRankedBeers() {
         document.querySelector(`#top5Content .top${counter} h4`).innerHTML = `${counter}. ` + sortedArray[(counter-1)].beerName;
         document.querySelector(`#top5Content .top${counter} h3`).innerHTML = sortedArray[(counter-1)].beerSales;
     })
-
-
-    
     setTimeout(displayRankedBeers,1000);
 }

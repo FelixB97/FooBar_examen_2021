@@ -1,3 +1,4 @@
+"use strict";
 import "./sass/main.scss";
 import {active_keg_information_app} from "./js/components/ative_keg_information_app.js";
 import {current_que_app} from "./js/components/current_que_app.js";
@@ -9,7 +10,7 @@ window.addEventListener("DOMContentLoaded", init);
 
 let currentData = {};
 
-async function init() { // async so js components doesnt load dom content until fetchData is done getting the content.
+async function init() { // async so apps doesnt run before the information they require is available
   console.log("initializing...");
   await fetchData(); 
   active_keg_information_app();
@@ -22,13 +23,9 @@ async function init() { // async so js components doesnt load dom content until 
 }
 
 async function fetchData() {
-
   const response = await fetch('https://foobar-jearasfix.herokuapp.com/');
   const jsonData = await response.json();
-  currentData = jsonData; // not nessesary
-  globalData.barData = jsonData; // global variable in inline script in index.html to use this fetch in all components
-
-  // console.log(currentData);
-
+  globalData.barData = jsonData; // global variable "globalData" is stated in an inline script in index.html
+  
   setTimeout(fetchData, 1000);
 }
