@@ -22,7 +22,7 @@ async function init() { // async so apps doesnt run before the information they 
 async function fetchData() {
   const response = await fetch('https://foobar-jearasfix.herokuapp.com/');
   const jsonData = await response.json();
-  globalData.barData = jsonData; // global variable "globalData" is stated in an inline script in index.html
-  
+  globalData.barData = jsonData; 
+  // global variable "globalData" is stated in an inline script in index.html
   setTimeout(fetchData, 1000);
 }
