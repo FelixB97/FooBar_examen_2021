@@ -49,7 +49,6 @@ function sepperateBeers(orderArray) {
 
     });
     
-
     orderArray.forEach( (drink) => {
         const theIndex = parsedArray.findIndex(element => element.beerName === drink);
         parsedArray[theIndex].beerCount++;
