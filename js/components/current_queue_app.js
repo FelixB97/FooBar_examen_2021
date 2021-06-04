@@ -32,8 +32,6 @@ function displayQueue() {
     setTimeout(displayQueue, 1000);
 }
 //by creating a unique array of objects with a beerCount,
-//we can compare the original order with that new array, 
-//and count up for each instance of each order item.
 function sepperateBeers(orderArray) {
     
     const uniqueArray = orderArray.filter(onlyUnique);
@@ -48,7 +46,8 @@ function sepperateBeers(orderArray) {
         parsedArray.push(beerObject);
 
     });
-    
+    //we can now compare the original order with that new array, 
+    //and count up for each instance of each order item.   
     orderArray.forEach( (drink) => {
         const theIndex = parsedArray.findIndex(element => element.beerName === drink);
         parsedArray[theIndex].beerCount++;
